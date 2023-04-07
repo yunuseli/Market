@@ -10,6 +10,7 @@ namespace Market.Test.Dapper
     {
       InitializeComponent();
     }
+    //https://github.com/mertmtn/DapperORMUsage
 
     //https://code-maze.com/using-dapper-with-asp-net-core-web-api/
     //https://www.mshowto.org/c-dapper-kullanimi.html

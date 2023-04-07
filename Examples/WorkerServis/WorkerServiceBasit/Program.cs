@@ -1,4 +1,4 @@
-namespace Market.WorkerService
+namespace WorkerServiceBasit
 {
   public class Program
   {

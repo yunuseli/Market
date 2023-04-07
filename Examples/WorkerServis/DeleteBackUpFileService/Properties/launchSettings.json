@@ -1,8 +1,7 @@
 ﻿{
   "profiles": {
-    "Market.WorkerService": {
+    "DeleteBackUpFileService": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Development"
       }
