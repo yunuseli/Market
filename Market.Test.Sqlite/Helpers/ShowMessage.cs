@@ -1,5 +1,4 @@
-﻿
-using Market.Test.Sqlite.Enums;
+﻿using Market.Test.Sqlite.Enums;
 using Market.Test.Sqlite.Models;
 
 namespace Market.Test.Sqlite.Helpers

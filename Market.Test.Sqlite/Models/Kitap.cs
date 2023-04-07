@@ -14,7 +14,6 @@ namespace Market.Test.Sqlite.Models
     public short SayfaSayisi { get; set; }
     public string Aciklama { get; set; }
 
-
     [Required]
     public int YazarId { get; set; }
     [Required]

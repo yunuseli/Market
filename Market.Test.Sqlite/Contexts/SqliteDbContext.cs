@@ -25,7 +25,6 @@ namespace Market.Test.Sqlite.Contexts
     public SqliteDbContext(string connectionString)
     {
       _connectionString = connectionString;
-
       // Database.Migrate();
     }
 

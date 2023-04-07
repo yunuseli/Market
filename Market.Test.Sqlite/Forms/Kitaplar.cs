@@ -46,14 +46,24 @@ namespace Market.Test.Sqlite.Forms
       {
         ProgramInfo SetProgramInfo = new ProgramInfo();
 
-        //string dbconn = $"Data Source={Application.StartupPath}KitapListesi.db";
-        string dbconn = $"Data Source={Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\\DataHouse\\Db\\KitapListesi.db";
-        //string dbconn = $"Data Source={Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)}\\Dh\\KitapListesi.db";
+        string dbconn = $"Data Source={
+          Environment.GetFolderPath(
+            Environment.SpecialFolder.ApplicationData)}\\DataHouse\\Db\\KitapListesi.db";
+
         ProgramInfo.context = new SqliteDbContext(dbconn);
+
+        ProgramInfo.context.Database.EnsureCreated();
+
+        //string dbconn = $"Data Source={Application.StartupPath}KitapListesi.db";
+
+
+
+        //string dbconn = $"Data Source={Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)}\\Dh\\KitapListesi.db";
+
 
         // Uncomment the line below to start fresh with a new database.
         // this.dbContext.Database.EnsureDeleted();
-        ProgramInfo.context.Database.EnsureCreated();
+
 
 
         //this.dbContext.Categories.Load();
