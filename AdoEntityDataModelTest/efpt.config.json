@@ -1,0 +1,89 @@
+﻿{
+   "CodeGenerationMode": 3,
+   "ContextClassName": "NorthwindDBContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "ModelsNorthwind",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "AdoEntityDataModelTest",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[Bolge]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Bolgeler]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Kategoriler]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MusteriDemographics]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Musteriler]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MusteriMusteriDemo]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Nakliyeciler]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PersonelBolgeler]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Personeller]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Satis Detaylari]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Satislar]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tedarikciler]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Urunler]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "INPUTFF\\SQLEXPRESS.NorthwindTR",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

@@ -30,11 +30,24 @@ namespace DeleteBackUpFileService
       _serviceRunInSeconds = Convert.ToInt32(configuration["FileConfigSettings:RunIntervalInSeconds"]);
       return base.StartAsync(cancellationToken);
     }
+    public override Task StopAsync(CancellationToken cancellationToken)
+    {
+      return base.StopAsync(cancellationToken);
+    }
 
     public void ClearBackUpFile()
     {
-      string[] files = Directory.GetFiles(_backUpFilePath, "*.bak*");
-      Array.ForEach(files, File.Delete);
+      try
+      {
+        if (!Directory.Exists(_backUpFilePath))
+          Directory.CreateDirectory(_backUpFilePath);
+
+        string[] files = Directory.GetFiles(_backUpFilePath, "*.bak*");
+        Array.ForEach(files, File.Delete);
+      }
+      catch (Exception)
+      {
+      }
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)

@@ -9,7 +9,7 @@ namespace DeleteBackUpFileService
 
     // publish
     // cmd
-    // sc create BenimServisim binPath="C:\Program Files (x86)\Common Files\BenimUygulamam\DeleteBackUpFileService.exe",
+    //sc create BenimServisim binPath="C:\Program Files (x86)\Common Files\BenimUygulamam\publish\DeleteBackUpFileService.exe",
     //sc query "BenimServisim"
     //sc start "BenimServisim"
     //sc stop "BenimServisim"

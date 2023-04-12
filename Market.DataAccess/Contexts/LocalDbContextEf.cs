@@ -25,5 +25,6 @@ namespace Market.DataAccess.Contexts
     }
 
     public DbSet<Arkadas> Arkadaslar { get; set; }
+
   }
 }

@@ -1,11 +1,7 @@
 using Dapper;
 using Market.Entity.Classes.DbClasses.MusteriSiniflari;
 using Market.Entity.Classes.DbClasses.UserClasses;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Net.NetworkInformation;
-using System.Windows.Forms;
+using Microsoft.Extensions.Configuration;
 
 namespace Market.Test.Dapper
 {
@@ -43,12 +39,12 @@ namespace Market.Test.Dapper
       {
         var queryUser = "SELECT * FROM MarketUser";
         var users1 = MarketDbContextDapper.GetSqlDbConn().Query<MarketUser>(queryUser);
-        var users2 = MarketDbContextDapper.GetDapperDbConn().Query<MarketUser>(queryUser);
+        var users2 = MarketDbContextDapper.GetDbConnIdbc().Query<MarketUser>(queryUser);
         dataGridView1.DataSource = users2.ToList();
 
         var queryMust = "SELECT * FROM Musteriler";
         var Must1 = await MarketDbContextDapper.GetSqlDbConn().QueryAsync<Musteri>(queryMust);
-        var Must2 = await MarketDbContextDapper.GetDapperDbConn().QueryAsync<Musteri>(queryMust);
+        var Must2 = await MarketDbContextDapper.GetDbConnIdbc().QueryAsync<Musteri>(queryMust);
         dataGridView2.DataSource = Must2.ToList();
 
       }
@@ -103,8 +99,14 @@ namespace Market.Test.Dapper
         Telefon = "Tele" + sayi.ToString()
       };
 
-      var result = MarketDbContextDapper.GetDapperDbConn().Execute(sqlquerry, musteri);
+      var result = MarketDbContextDapper.GetSqlDbConn().Execute(sqlquerry, musteri);
       button1.PerformClick();
+    }
+
+    private void Form1_HelpButtonClicked(object sender, System.ComponentModel.CancelEventArgs e)
+    {
+      AboutBox1 aboutBox1 = new AboutBox1();
+      aboutBox1.ShowDialog();
     }
   }
 }

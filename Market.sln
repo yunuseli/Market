@@ -117,7 +117,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerServisOrnek", "Worker
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeleteBackUpFileService", "Examples\WorkerServis\DeleteBackUpFileService\DeleteBackUpFileService.csproj", "{9E13B10A-4F2E-4C5C-918F-DFF30802C095}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerServiceBasit", "Examples\WorkerServis\WorkerServiceBasit\WorkerServiceBasit.csproj", "{8568767D-51E0-4A0B-BFE7-0F2C5151739D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerServiceBasit", "Examples\WorkerServis\WorkerServiceBasit\WorkerServiceBasit.csproj", "{8568767D-51E0-4A0B-BFE7-0F2C5151739D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupSqlite2", "SetupSqlite2\SetupSqlite2.vdproj", "{3FABE36E-14EC-4612-97A1-E9243CE9A804}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerServiceOrnek", "WorkerServiceOrnek\WorkerServiceOrnek.csproj", "{4511CE0A-3606-4BD7-B3B0-38F84D355198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoEntityDataModelTest", "AdoEntityDataModelTest\AdoEntityDataModelTest.csproj", "{A100562D-AE7E-4786-BAC4-A3A76A4741D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -299,6 +305,16 @@ Global
 		{8568767D-51E0-4A0B-BFE7-0F2C5151739D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8568767D-51E0-4A0B-BFE7-0F2C5151739D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8568767D-51E0-4A0B-BFE7-0F2C5151739D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FABE36E-14EC-4612-97A1-E9243CE9A804}.Debug|Any CPU.ActiveCfg = Debug
+		{3FABE36E-14EC-4612-97A1-E9243CE9A804}.Release|Any CPU.ActiveCfg = Release
+		{4511CE0A-3606-4BD7-B3B0-38F84D355198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4511CE0A-3606-4BD7-B3B0-38F84D355198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4511CE0A-3606-4BD7-B3B0-38F84D355198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4511CE0A-3606-4BD7-B3B0-38F84D355198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A100562D-AE7E-4786-BAC4-A3A76A4741D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A100562D-AE7E-4786-BAC4-A3A76A4741D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A100562D-AE7E-4786-BAC4-A3A76A4741D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A100562D-AE7E-4786-BAC4-A3A76A4741D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -356,6 +372,9 @@ Global
 		{24FEA7DB-235A-41C8-B7F3-537F2F36A71D} = {30D60903-B13C-47A8-B3A8-A9AAAC31673B}
 		{9E13B10A-4F2E-4C5C-918F-DFF30802C095} = {24FEA7DB-235A-41C8-B7F3-537F2F36A71D}
 		{8568767D-51E0-4A0B-BFE7-0F2C5151739D} = {24FEA7DB-235A-41C8-B7F3-537F2F36A71D}
+		{3FABE36E-14EC-4612-97A1-E9243CE9A804} = {BE0490D4-98AD-4097-8022-D08C7F33D1CB}
+		{4511CE0A-3606-4BD7-B3B0-38F84D355198} = {24FEA7DB-235A-41C8-B7F3-537F2F36A71D}
+		{A100562D-AE7E-4786-BAC4-A3A76A4741D8} = {30D60903-B13C-47A8-B3A8-A9AAAC31673B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {021765B0-C879-4A67-9558-B310892E6A32}

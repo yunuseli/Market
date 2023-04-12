@@ -83,8 +83,10 @@
       this.Controls.Add(this.dataGridView2);
       this.Controls.Add(this.dataGridView1);
       this.Controls.Add(this.button1);
+      this.HelpButton = true;
       this.Name = "Form1";
       this.Text = "Form1";
+      this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.Form1_HelpButtonClicked);
       this.Load += new System.EventHandler(this.Form1_Load);
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
